@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MemoQOllamaPlugin</RootNamespace>
+    <AssemblyName>MemoQOllamaPlugin</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MemoQ.MTInterfaces">
+      <HintPath>libs\MemoQ.MTInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoQ.Addins.Common">
+      <HintPath>libs\MemoQ.Addins.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+</Project>
